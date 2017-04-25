@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ba74777-70b5-4f55-b780-cae726ea8005" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/contact.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/hotreload.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/login.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/messages.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/components/register.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/content.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/log.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/returnvalues.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/storage/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/storage/messagequeue.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/storage/templates.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/itchat/utils.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <ignored path="MinaDog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
@@ -50,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="42">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -96,10 +81,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/itchat/components/messages.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config.example.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -445,14 +430,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -484,6 +461,14 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
