@@ -14,7 +14,7 @@ last_path = ''
 last_user = ''
 
 
-@itchat.msg_register(INCOME_MSG)
+@itchat.msg_register([TEXT, SHARING])
 def simple_reply(msg):
     global last_id, last_path, last_user
 
