@@ -3,3 +3,5 @@ config.py
 .idea/
 __pycache__/
 *.pyc
+qrcode.jpg
+QR.png
