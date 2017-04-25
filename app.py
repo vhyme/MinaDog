@@ -77,6 +77,6 @@ def generate_qrcode(appid, path, sendto):
     itchat.send_image('qrcode.jpg', sendto)
 
 
-itchat.auto_login(enableCmdQR=True)
+itchat.auto_login(enableCmdQR=2)
 
 itchat.run()
