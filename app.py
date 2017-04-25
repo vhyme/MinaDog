@@ -31,7 +31,7 @@ def simple_reply(msg):
             if appid:
                 appid = appid.group(1)
                 if appid in id_secrets:
-                    reply += '\n! 检测到小程序管理权限，回复2可生成该页面二维码。带参二维码只有 10w 个，请谨慎调用。'
+                    reply += '\n! 检测到小程序管理权限，回复1生成普通二维码，回复2生成圆形小程序码。带参二维码只有10w个，请谨慎调用。'
 
                     last_path = path
                     last_id = appid
@@ -41,8 +41,8 @@ def simple_reply(msg):
             itchat.send(reply, msg['FromUserName'])
 
         elif msg['FromUserName'] == last_user:
-            if msg['Content'].strip() == '2' and last_id != '' and last_path != '':
-                generate_qrcode(last_id, last_path, last_user)
+            if msg['Content'].strip() in ['1', '2'] and last_id != '' and last_path != '':
+                generate_qrcode(last_id, last_path, last_user, wxacode=msg['Content'].strip() == '2')
                 last_id = ''
                 last_path = ''
                 last_user = ''
@@ -52,7 +52,7 @@ def simple_reply(msg):
                 last_user = ''
 
 
-def generate_qrcode(appid, path, sendto):
+def generate_qrcode(appid, path, sendto, wxacode=True):
     itchat.send('[自动回复] 正在生成二维码…\n[MinaDog机器人]', sendto)
     secret = id_secrets[appid]
     request = requests.get('https://api.weixin.qq.com/cgi-bin/token' +
@@ -65,7 +65,8 @@ def generate_qrcode(appid, path, sendto):
         return
     token = token['access_token']
 
-    request = requests.post('https://api.weixin.qq.com/wxa/getwxacode?access_token=' + token, json={
+    url = 'https://api.weixin.qq.com/wxa/getwxacode' if wxacode else 'https://api.weixin.qq.com/cgi-bin/wxaapp/createwxaqrcode'
+    request = requests.post(url + '?access_token=' + token, json={
         'path': path,
         'width': 1200
     }, stream=True)
@@ -77,6 +78,6 @@ def generate_qrcode(appid, path, sendto):
     itchat.send_image('qrcode.jpg', sendto)
 
 
-itchat.auto_login(enableCmdQR=2)
+itchat.auto_login(enableCmdQR=2, hotReload=True)
 
 itchat.run()
