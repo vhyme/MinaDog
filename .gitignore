@@ -1,3 +1,5 @@
 .DS_Store
 config.py
 .idea/
+__pycache__/
+*.pyc
