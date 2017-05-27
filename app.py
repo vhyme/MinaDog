@@ -31,7 +31,7 @@ def simple_reply(msg):
             if appid:
                 appid = appid.group(1)
                 if appid in id_secrets:
-                    reply += '\n! 检测到小程序管理权限，回复1生成普通二维码，回复2生成圆形小程序码。带参二维码只有10w个，请谨慎调用。'
+                    reply += '\n! 检测到小程序管理权限，回复1生成普通二维码，回复2生成圆形小程序码。'
 
                     last_path = path
                     last_id = appid
