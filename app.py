@@ -19,7 +19,7 @@ def simple_reply(msg):
     global last_id, last_path, last_user
 
     if 'Content' in msg:
-        result = re.search('<pagepath><!\[CDATA\[([0-9A-Za-z/.?=]+)]]></pagepath>', msg['Content'])
+        result = re.search('<pagepath><!\[CDATA\[([0-9A-Za-z/.?=%&-_]+)]]></pagepath>', msg['Content'])
         test = re.search('<pkginfo>[\r\n\s]*<type>([1-2])</type>', msg['Content'])
         if result:
             path = result.group(1).replace('.html', '')
